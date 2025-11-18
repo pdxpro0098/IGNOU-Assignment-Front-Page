@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "RooneySans-Regular";
+    src: url("https://db.onlinewebfonts.com/t/ade3a1004f37df170006765dcbd93c15.eot");
+    src: url("https://db.onlinewebfonts.com/t/ade3a1004f37df170006765dcbd93c15.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/ade3a1004f37df170006765dcbd93c15.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/ade3a1004f37df170006765dcbd93c15.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/ade3a1004f37df170006765dcbd93c15.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/ade3a1004f37df170006765dcbd93c15.svg#RooneySans-Regular")format("svg");
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    margin: 1rem 4rem;
+    font-family: "RooneySans-Regular";
+    position: absolute;
+}
+
+/* Utility classes*/
+
+.underLine {
+    text-decoration: underline;
+}
+
+.textBlue {
+    color: #0758b5;
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+.plainText {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.75rem;
+    font-weight: bold;
+
+    #header__title {
+        text-align: center;
+
+        &>* {
+            padding: 0.1rem 0;
+        }
+
+        #title__mainHead {
+            font-size: 2.5rem;
+        }
+    }
+
+    img {
+        height: 8rem;
+    }
+}
+
+#title__decs {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.1rem 0;
+}
+
+#divider {
+    margin: 1rem auto;
+    width: 75vw;
+    height: 0.3rem;
+    background-color: black;
+}
+
+#main {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90vw;
+
+    .main__input {
+        display: flex;
+        margin: 1rem;
+
+        #address__input {
+            resize: none;
+            height: 8rem;
+            width: 45rem;
+        }
+
+        span {
+            width: 5rem;
+        }
+
+        input {
+            width: 45rem;
+        }
+
+        p {
+            width: 45rem;
+        }
+    }
+}
+
+#preFooter {
+    margin-top: 3rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sign__img {
+    position: absolute;
+    top: 60rem;
+    right: 1.5rem;
+    height: 10rem;
+    width: 20rem;
+}
+
+#printForm {
+    padding: 1rem;
+    margin: 1rem 100rem;
+    font-size: 3rem;
+    color: #0758b5;
+}
+
+#footer {
+    font-size: 1.75rem;
+    letter-spacing: 0.05rem;
+
+    .footer__head {
+        margin: 0.75rem 0rem;
+    }
+
+
+    li {
+        margin: 0.2rem 3rem;
+    }
+}
+
+@media print {
+    @page {
+        margin: 0;
+    }
+
+    header,
+    footer {
+        display: none;
+    }
+}
