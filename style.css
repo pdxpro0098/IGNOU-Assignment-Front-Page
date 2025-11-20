@@ -47,6 +47,7 @@ body {
     justify-content: space-evenly;
     font-size: 1.75rem;
     font-weight: bold;
+    width: 90vw;
 
     #header__title {
         text-align: center;
@@ -115,6 +116,7 @@ body {
     font-size: 2rem;
     display: flex;
     justify-content: space-between;
+    width: 90vw;
 }
 
 #sign__img {
@@ -127,14 +129,16 @@ body {
 
 #printForm {
     padding: 1rem;
-    margin: 1rem 100rem;
+    margin: 1rem auto;
     font-size: 3rem;
     color: #0758b5;
+    
 }
 
 #footer {
     font-size: 1.75rem;
     letter-spacing: 0.05rem;
+    /* width: 90vw; */
 
     .footer__head {
         margin: 0.75rem 0rem;
@@ -157,32 +161,3 @@ body {
     }
 }
 
-@media screen and (max-width: 1366px) {
-    html {
-        font-size: 58%;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    html {
-        font-size: 52%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    html {
-        font-size: 50%;
-    }
-}
-
-@media screen and (max-width: 996px) {
-    html {
-        font-size: 50%;
-    }
-}
