@@ -21,14 +21,21 @@ printForm.addEventListener("click", () => {
 
     print();
     setTimeout(() => {
-        window.location.reload();
+        resetPage();
     }, 3000);
 })
+
+function resetPage() {
+    let course = document.getElementById("CourseCode__input");
+    course.outerHTML = `<input type="text" id="CourseCode__input">`;
+    printForm.style.display = "";
+
+}
 
 function PrintForm() {
     Name.outerHTML = `<p class="textBlue">${Name.value}</p>`;
     enroll.outerHTML = `<p class="textBlue  plainText">${enroll.value}</p>`;
-    course.outerHTML = `<p class="textBlue plainText">${course.value}</p>`;
+    course.outerHTML = `<p class="textBlue plainText" id="CourseCode__input">${course.value}</p>`;
     mobile.outerHTML = `<p class="textBlue plainText">${mobile.value}</p>`;
     email.outerHTML = `<p class="textBlue plainText">${email.value}</p>`;
 }

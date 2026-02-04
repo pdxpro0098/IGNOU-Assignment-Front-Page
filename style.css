@@ -112,7 +112,7 @@ body {
 }
 
 #preFooter {
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 2rem;
     display: flex;
     justify-content: space-between;
@@ -127,8 +127,8 @@ body {
 
 #sign__img {
     position: absolute;
-    width: 20rem;
-    height: 10rem;
+    width: 17rem;
+    height: 7.5rem;
     margin-left: 5rem;
     margin-top: -10rem;
 }
@@ -148,7 +148,6 @@ body {
     .footer__head {
         margin: 0.75rem 0rem;
     }
-
 
     li {
         margin: 0.2rem 3rem;
