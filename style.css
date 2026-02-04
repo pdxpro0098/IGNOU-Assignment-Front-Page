@@ -117,14 +117,20 @@ body {
     display: flex;
     justify-content: space-between;
     width: 90vw;
+
+
+    #preFooter__sign{
+        background-color: red;
+        width: 30rem;
+    }
 }
 
 #sign__img {
     position: absolute;
-    top: 60rem;
-    right: 1.5rem;
-    height: 10rem;
     width: 20rem;
+    height: 10rem;
+    margin-left: 5rem;
+    margin-top: -10rem;
 }
 
 #printForm {
