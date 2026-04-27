@@ -33,17 +33,14 @@ function resetPage() {
 }
 
 function PrintForm() {
-    Name.outerHTML = `<p class="textBlue">${Name.value}</p>`;
-    enroll.outerHTML = `<p class="textBlue  plainText">${enroll.value}</p>`;
-    course.outerHTML = `<p class="textBlue plainText" id="CourseCode__input">${course.value}</p>`;
-    mobile.outerHTML = `<p class="textBlue plainText">${mobile.value}</p>`;
-    email.outerHTML = `<p class="textBlue plainText">${email.value}</p>`;
+    if (Name.parentElement) Name.outerHTML = `<p class="textBlue">${Name.value}</p>`;
+    if (enroll.parentElement) enroll.outerHTML = `<p class="textBlue  plainText">${enroll.value}</p>`;
+    if (course.parentElement) course.outerHTML = `<p class="textBlue plainText" id="CourseCode__input">${course.value}</p>`;
+    if (mobile.parentElement) mobile.outerHTML = `<p class="textBlue plainText">${mobile.value}</p>`;
+    if (email.parentElement) email.outerHTML = `<p class="textBlue plainText">${email.value}</p>`;
 }
 
 const date = () => {
-    let d = new Date();
-    const day = d.getDate();
-    const month = d.getMonth();
-    const year = d.getFullYear();
-    return `${day}-${month + 1}-${year}`;
-}
+    const d = new Date();
+    return d.toLocaleDateString("en-GB");
+};
